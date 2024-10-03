@@ -144,7 +144,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="workflow_basic_template" sap:VirtualizedContainerService.HintSize="892.0000000000001,4146.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="workflow_basic_template" sap:VirtualizedContainerService.HintSize="834.4000000000001,4146.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="jobInfo" />
       <Variable x:TypeArguments="x:String" Name="strFromDate" />
@@ -264,7 +264,7 @@
               <OutArgument x:TypeArguments="x:String">[strProcessData]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[_dicConfig("PROCESS_MAIN_FOLDER").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[_dicConfig("PROCESS_DATA").ToString]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -272,7 +272,7 @@
               <OutArgument x:TypeArguments="x:String">[_strFileVietqrDataFile]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[Path.Combine(strProcessData, String.Format("{0}_{1}_{2}.xlsx", strBankAccount, strFromDate.Replace("/", ""), strToDate.Replace("/", "")))]</InArgument>
+              <InArgument x:TypeArguments="x:String">[Path.Combine(strProcessData, String.Format("vietqr_{0}_{1}_{2}.xlsx", strBankAccount, strFromDate.Replace("/", ""), strToDate.Replace("/", "")))]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
@@ -6193,12 +6193,12 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="type_file_name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Text="[_strFileVietqrDataFile]" Version="V4">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="type_file_name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Text="[_strFileVietqrDataFile]" Version="V4">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="b91cac9b-5e13-426c-b5cf-2ce4d1ee70dd" DesignTimeRectangle="136, 389, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="fb75c8a8-8ce4-49d9-a09f-4d0a322ddff7" InformativeScreenshot="5c6a4f4c730d278758ad00a483283663.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="b91cac9b-5e13-426c-b5cf-2ce4d1ee70dd" DesignTimeRectangle="169, 455, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="fb75c8a8-8ce4-49d9-a09f-4d0a322ddff7" InformativeScreenshot="5296551f5346b448877b6072bc33adcd.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="b91cac9b-5e13-426c-b5cf-2ce4d1ee70dd" DesignTimeRectangle="18, 386, 115, 23" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" Guid="0a18c979-90b9-4ce8-a8e5-12c09f51bba3" SearchSteps="Selector" />
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="b91cac9b-5e13-426c-b5cf-2ce4d1ee70dd" DesignTimeRectangle="22, 452, 144, 28" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" Guid="0a18c979-90b9-4ce8-a8e5-12c09f51bba3" SearchSteps="Selector" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -6297,7 +6297,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="log_download" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Downloaded file: &quot; + _strFileVietqrDataFile]">
+                    <ui:LogMessage DisplayName="log_download" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Fatal" Message="[&quot;Downloaded file: &quot; + _strFileVietqrDataFile]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
