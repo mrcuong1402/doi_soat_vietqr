@@ -1,0 +1,82 @@
+{
+  "name": "doi_soat_vietqr",
+  "projectId": "a2ac53fb-bd0f-4ca7-b411-7baa1c8a7508",
+  "description": "standalone_template_4.0.0",
+  "main": "main.xaml",
+  "dependencies": {
+    "GERT.Telegram.Activities": "[1.2.0]",
+    "UiPath.Excel.Activities": "[2.24.1]",
+    "UiPath.GSuite.Activities": "[2.7.20-preview]",
+    "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.MicrosoftOffice365.Activities": "[2.5.8]",
+    "UiPath.System.Activities": "[24.11.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.11.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.3",
+  "projectVersion": "0.1.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4f863ec4-192b-4350-8391-da1dbb4ec925",
+        "testCaseType": "TestCase",
+        "fileName": "wfs\\_test\\test_wf.xaml"
+      }
+    ],
+    "modernBehavior": false,
+    "saveToCloud": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "main_dispatcher.xaml",
+      "uniqueId": "e2bab45d-579c-4cce-9463-2e9959e59ceb",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "main.xaml",
+      "uniqueId": "78b0ac16-47f3-49c2-afba-669555ab211c",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

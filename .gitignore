@@ -1,0 +1,26 @@
+## General ignores
+
+# UiPath Folders
+**/.entities*
+**/.local*
+**/.project*
+**/.settings*
+**/.templates*
+**/.tmh*
+
+# Process Folders
+**/process_data*
+**/process_logs
+**/exceptions
+**/out
+
+# Files
+*.png
+*.jpeg
+*.pdf
+*.xls
+
+
+
+
+
