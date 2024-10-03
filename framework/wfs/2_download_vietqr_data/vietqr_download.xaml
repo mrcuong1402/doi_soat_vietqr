@@ -144,7 +144,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="workflow_basic_template" sap:VirtualizedContainerService.HintSize="1193,3881" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="workflow_basic_template" sap:VirtualizedContainerService.HintSize="892.0000000000001,4146.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="jobInfo" />
       <Variable x:TypeArguments="x:String" Name="strFromDate" />
@@ -158,7 +158,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_args" sap:VirtualizedContainerService.HintSize="560,572" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_args" sap:VirtualizedContainerService.HintSize="558.4,574.4" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -166,7 +166,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="assign_test_arguments" sap:VirtualizedContainerService.HintSize="513,313" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="assign_test_arguments" sap:VirtualizedContainerService.HintSize="512,314.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="intRowIdx" />
             <Variable x:TypeArguments="sd:DataTable" Name="dtaWorktray" />
@@ -176,7 +176,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="log_using_test_arguments" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;USING TEST ARGUMENTS!&quot;]">
+          <ui:LogMessage DisplayName="log_using_test_arguments" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;USING TEST ARGUMENTS!&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -184,7 +184,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="inv_utils_read_config_dict.xaml" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="wfs\_fmw\utils_read_config_dict.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="inv_utils_read_config_dict.xaml" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="wfs\_fmw\utils_read_config_dict.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="_dicConfiguration">[_dicConfig]</OutArgument>
               <InArgument x:TypeArguments="x:String" x:Key="_strConfigFile">configuration.xlsx</InArgument>
@@ -197,7 +197,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <ui:MultipleAssign DisplayName="assign_wf_test_arguments" sap:VirtualizedContainerService.HintSize="479,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
+          <ui:MultipleAssign DisplayName="assign_wf_test_arguments" sap:VirtualizedContainerService.HintSize="478.4,140.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -214,7 +214,7 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -223,8 +223,8 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="560,57" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
-    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="560,57" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="558.4,56.8" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
+    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="558.4,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -232,7 +232,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:MultipleAssign DisplayName="assign_wf_config_parameters" sap:VirtualizedContainerService.HintSize="560,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
+    <ui:MultipleAssign DisplayName="assign_wf_config_parameters" sap:VirtualizedContainerService.HintSize="558.4,274.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -278,19 +278,19 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: VIETQR.VN" sap:VirtualizedContainerService.HintSize="560,2780" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="use_browser_chrome_vietqrvn" sap:VirtualizedContainerService.HintSize="558.4,3036.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,2531" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524.8,2788" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DisplayName="CV Screen Scope 'FLUTTER-VIEW'" sap:VirtualizedContainerService.HintSize="492,1162" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DisplayName="cv_screen_scope_flutter_view" sap:VirtualizedContainerService.HintSize="491.2,1162.4" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
               <p:CVScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -302,14 +302,14 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="select_account" sap:VirtualizedContainerService.HintSize="450,593" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence DisplayName="select_account" sap:VirtualizedContainerService.HintSize="449.6,594.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (1875,83,17,18)&quot;]" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DesignTimeScaleFactor="1" DisplayName="click_list_account" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_13" InformativeScreenshot="e97cbbf8a58c058d8f5bfd845d3de512" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                      <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (1875,83,17,18)&quot;]" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DesignTimeScaleFactor="1" DisplayName="click_list_account" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_13" InformativeScreenshot="e97cbbf8a58c058d8f5bfd845d3de512" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                         <p:CvClickWithDescriptor.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -344,7 +344,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CvClickWithDescriptor>
-                      <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: Text 'Tim kiem theo so TK ngan hang' (766,265,178,15)&quot;]" DesignTimeCacheId="a7511035-aece-4612-af60-5405f1d1b237" DesignTimeScaleFactor="1" DisplayName="type_bank_account" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="8c240863aa277b66f01bccf8e780dd78" NumberOfScrolls="2" ScrollDirection="None" Text="[strBankAccount]" Version="V6">
+                      <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: Text 'Tim kiem theo so TK ngan hang' (766,265,178,15)&quot;]" DesignTimeCacheId="a7511035-aece-4612-af60-5405f1d1b237" DesignTimeScaleFactor="1" DisplayName="type_bank_account" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="8c240863aa277b66f01bccf8e780dd78" NumberOfScrolls="2" ScrollDirection="None" Text="[strBankAccount]" Version="V6">
                         <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
                           <uc:CvDescriptor Id="c52e3a79-7383-438a-9f50-69a93a04b958">
                             <uc:CvDescriptor.Target>
@@ -369,7 +369,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CvTypeIntoWithDescriptor>
-                      <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (1167,328,22,20)&quot; +&#xA;&quot;Anchor: Text 'Chon Tk ngan hang' (725,207,112,15)&quot; +&#xA;&quot;Anchor: Text '&quot; + strBankAccount + &quot;' (779,326,79,10)&quot;]" DesignTimeCacheId="4fdc5959-f999-4828-b619-a68a25d99b86" DesignTimeScaleFactor="1" DisplayName="click_right_arrow" sap:VirtualizedContainerService.HintSize="416,217" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_14" InformativeScreenshot="4b67c053c090db3c5b0f1eac103abd0a" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                      <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (1167,328,22,20)&quot; +&#xA;&quot;Anchor: Text 'Chon Tk ngan hang' (725,207,112,15)&quot; +&#xA;&quot;Anchor: Text '&quot; + strBankAccount + &quot;' (779,326,79,10)&quot;]" DesignTimeCacheId="4fdc5959-f999-4828-b619-a68a25d99b86" DesignTimeScaleFactor="1" DisplayName="click_right_arrow" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_14" InformativeScreenshot="4b67c053c090db3c5b0f1eac103abd0a" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                         <p:CvClickWithDescriptor.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -404,7 +404,7 @@
                           </ui:Target>
                         </p:CvClickWithDescriptor.Target>
                       </p:CvClickWithDescriptor>
-                      <Delay DisplayName="delay_3s" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      <Delay DisplayName="delay_3s" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
                       <p:CvElementExistsWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Text '1' (295,536,6,12)&quot; +&#xA;&quot;Anchor: Text 'STT' (287,492,24,12)&quot;]" DesignTimeCacheId="4fdc5959-f999-4828-b619-a68a25d99b86" DesignTimeScaleFactor="1" DisplayName="wait_table_load" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CvElementExistsWithDescriptor_1" InformativeScreenshot="828ac091b19a97a2e7b0222520c4f0fb" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                         <p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
                           <uc:CvDescriptor Id="4de58179-0e4b-4d99-9668-f539ebd5e0d1">
@@ -426,7 +426,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CvElementExistsWithDescriptor>
                     </Sequence>
-                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Xuat Excel' (1306,346,58,12)&quot;]" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DesignTimeScaleFactor="1" DisplayName="click_xuat_excel " sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="5fb55343b4e1ef98930d203a61ae1810" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Xuat Excel' (1306,346,58,12)&quot;]" DesignTimeCacheId="99988305-7fd9-4533-843f-9abed1421eba" DesignTimeScaleFactor="1" DisplayName="click_xuat_excel " sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="5fb55343b4e1ef98930d203a61ae1810" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                       <p:CvClickWithDescriptor.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -461,7 +461,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </p:CvClickWithDescriptor>
-                    <Sequence DisplayName="input from date" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="input from date" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -639,7 +639,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CvClickWithDescriptor>
                     </Sequence>
-                    <Sequence DisplayName="input to date" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="input to date" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -817,7 +817,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </p:CvClickWithDescriptor>
                     </Sequence>
-                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Button (799,621,321,36)&quot; +&#xA;&quot;Anchor: Text 'Xuat Excel' (930,633,59,12)&quot; +&#xA;&quot;Anchor: Text 'Cua hang' (800,312,49,15)&quot;]" DesignTimeCacheId="dea54bb5-b112-414b-9a1b-757d5275fa9f" DesignTimeScaleFactor="1" DisplayName="click_xuat_excel " sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_12" InformativeScreenshot="2095f0be9365468209e882dd0acbfe1d" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Button (799,621,321,36)&quot; +&#xA;&quot;Anchor: Text 'Xuat Excel' (930,633,59,12)&quot; +&#xA;&quot;Anchor: Text 'Cua hang' (800,312,49,15)&quot;]" DesignTimeCacheId="dea54bb5-b112-414b-9a1b-757d5275fa9f" DesignTimeScaleFactor="1" DisplayName="click_xuat_excel " sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_12" InformativeScreenshot="2095f0be9365468209e882dd0acbfe1d" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                       <p:CvClickWithDescriptor.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -6130,7 +6130,7 @@
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </p:CVScope.OCREngine>
               <p:CVScope.Target>
@@ -6150,23 +6150,50 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:CVScope>
-            <Sequence DisplayName="save as" sap:VirtualizedContainerService.HintSize="492,1307" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="save as" sap:VirtualizedContainerService.HintSize="491.2,1564" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:RetryScope DisplayName="rs type file name" sap:VirtualizedContainerService.HintSize="458,544" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
+              <If Condition="[File.Exists(_strFileVietqrDataFile)]" DisplayName="delete_file_if_exist" sap:VirtualizedContainerService.HintSize="457.6,56.8" sap2010:WorkflowViewState.IdRef="If_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:DeleteFileX DisplayName="delete_file" sap:VirtualizedContainerService.HintSize="382.4,104" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[_strFileVietqrDataFile]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:RetryScope DisplayName="rs_type_file_name" sap:VirtualizedContainerService.HintSize="457.6,545.6" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
                 <ui:RetryScope.ActivityBody>
                   <ActivityAction>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,337" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,337.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="type file name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,277" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Text="[_strFileVietqrDataFile]" Version="V4">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="type_file_name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Text="[_strFileVietqrDataFile]" Version="V4">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="b91cac9b-5e13-426c-b5cf-2ce4d1ee70dd" DesignTimeRectangle="136, 389, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="fb75c8a8-8ce4-49d9-a09f-4d0a322ddff7" InformativeScreenshot="5c6a4f4c730d278758ad00a483283663.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -6206,7 +6233,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:RetryScope>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="click save" sap:VirtualizedContainerService.HintSize="458,57" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="click_save" sap:VirtualizedContainerService.HintSize="457.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb727a76-18eb-42f6-ae67-2962aa6bc87c" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="b5d02ce6-48f9-46b8-a47f-a0cc969e5597" DesignTimeRectangle="747, 489, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='*Save' /&gt;" Guid="db073436-badd-4ac7-b962-8e79e7927c35" ImageBase64="" InformativeScreenshot="094c55904d1560d21e22c2aba458195d.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -6227,15 +6254,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Not File.Exists(_strFileVietqrDataFile)]" DisplayName="while check file exist" sap:VirtualizedContainerService.HintSize="458,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="30">
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Not File.Exists(_strFileVietqrDataFile)]" DisplayName="while_check_file_exist" sap:VirtualizedContainerService.HintSize="457.6,254.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="30">
                 <ui:InterruptibleWhile.Body>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Delay DisplayName="delay 2s" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Delay_1">
+                    <Delay DisplayName="delay 2s" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Delay_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -6247,30 +6274,30 @@
                 </ui:InterruptibleWhile.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InterruptibleWhile>
-              <If Condition="[Not File.Exists(_strFileVietqrDataFile)]" DisplayName="check file exist" sap:VirtualizedContainerService.HintSize="458,562" sap2010:WorkflowViewState.IdRef="If_2">
+              <If Condition="[Not File.Exists(_strFileVietqrDataFile)]" DisplayName="check_file_donwloaded" sap:VirtualizedContainerService.HintSize="457.6,564" sap2010:WorkflowViewState.IdRef="If_2">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Throw Exception="[New BusinessRuleException(&quot;Cannot download file: &quot; + Path.GetFileName(_strFileVietqrDataFile))]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    <Throw DisplayName="throw_se" Exception="[New SystemException(&quot;Cannot download file: &quot; + Path.GetFileName(_strFileVietqrDataFile))]" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,227.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Downloaded file: &quot; + _strFileVietqrDataFile]">
+                    <ui:LogMessage DisplayName="log_download" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Downloaded file: &quot; + _strFileVietqrDataFile]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -6295,7 +6322,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="560,48" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="558.4,48" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>

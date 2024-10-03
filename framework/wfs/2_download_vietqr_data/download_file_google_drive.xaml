@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1216,812</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_wf_template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
@@ -90,7 +90,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="workflow_basic_template" sap:VirtualizedContainerService.HintSize="496,686" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;-  Description of the function of this workflow. Add specific details and business logic if it exists.&#xA;&#xA;*** META ***&#xA;Created on:    202X-0X-XX  ; sisua.developer&#xA;Modified on:  202X-0X-XX ; sisua.developer" DisplayName="wdownload_file_google_driveorkflow_basic_template" sap:VirtualizedContainerService.HintSize="908.8000000000001,570.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="jobInfo" />
     </Sequence.Variables>
@@ -100,7 +100,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_args" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_args" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -147,8 +147,8 @@
         </Sequence>
       </If.Then>
     </If>
-    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
-    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
+    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -156,17 +156,12 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:MultipleAssign DisplayName="assign_wf_config_parameters" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
+    <ui:MultipleAssign DisplayName="assign_wf_config_parameters" sap:VirtualizedContainerService.HintSize="433.6,117.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4" />
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="wfs\2_download_vietqr_data\login_vietqr.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="wfs\2_download_vietqr_data\login_vietqr.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>

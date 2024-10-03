@@ -5,8 +5,8 @@
   "main": "main.xaml",
   "dependencies": {
     "GERT.Telegram.Activities": "[1.2.0]",
-    "UiPath.Excel.Activities": "[2.24.1]",
-    "UiPath.GSuite.Activities": "[2.7.20-preview]",
+    "UiPath.Excel.Activities": "[2.24.2]",
+    "UiPath.GSuite.Activities": "[2.7.22]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.MicrosoftOffice365.Activities": "[2.5.8]",
     "UiPath.System.Activities": "[24.11.0-preview]",
