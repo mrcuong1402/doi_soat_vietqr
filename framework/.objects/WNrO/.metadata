@@ -1,0 +1,14 @@
+﻿{
+  "Name": "vietqr.vn",
+  "Type": "App",
+  "Id": "WNrOQ5e3RU6BBpMjRmEalA",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/WNrOQ5e3RU6BBpMjRmEalA",
+  "Created": "2024-11-15T15:11:06.2314014Z",
+  "Updated": "2024-11-15T15:17:00.8236795Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "select bank account",
+  "Type": "Screen",
+  "Id": "__zrHy_-UU-DiKnkqYOueA",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/__zrHy_-UU-DiKnkqYOueA",
+  "ParentRef": "IXKExI60ykiHsIQ94JnUWA/r4FG7Oek6k-mF4ld0ycEnA",
+  "Created": "2024-11-15T15:17:00.9723892Z",
+  "Updated": "2024-11-15T15:17:00.9723892Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

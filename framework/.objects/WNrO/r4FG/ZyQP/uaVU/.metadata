@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Xuãt Excel",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "uaVULFzS9Ueoo1j1lZmrnQ",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/uaVULFzS9Ueoo1j1lZmrnQ",
+  "ParentRef": "IXKExI60ykiHsIQ94JnUWA/ZyQPPe0Gz0uxnWJ92NTD6g",
+  "Created": "2024-11-15T15:17:01.1698293Z",
+  "Updated": "2024-11-15T15:17:01.1698293Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

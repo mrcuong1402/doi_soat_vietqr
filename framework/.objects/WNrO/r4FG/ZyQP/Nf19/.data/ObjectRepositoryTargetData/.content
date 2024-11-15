@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FcvD6WuAlEKD20TadvqxUA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="c686a376-9e9f-4135-ba82-eaea9570ea40" CvElementArea="809, 524, 319, 37" CvType="InputBox" DesignTimeRectangle="809, 524, 319, 36" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="abe0f1bb-d081-49c9-b0c2-291db05cf18c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VIETQR.VN - Phần mềm tạo mã QR và Đối soát giao dịch thanh toán qua mã VietQR' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c686a376-9e9f-4135-ba82-eaea9570ea40" CvTextArea="807, 504, 49, 14" CvTextArgument="Thài gian" CvType="Text" DesignTimeRectangle="807, 505, 50, 13" ElementType="Text" Guid="eb1eab84-29a2-4f55-a36a-2121a79a7e9b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0d32b0a7d80b8f957f386e00b3027cc6.png" xmlns="">0Qx-ZBj4GJUqbext8bvpxjQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

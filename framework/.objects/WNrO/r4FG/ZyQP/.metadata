@@ -1,0 +1,12 @@
+﻿{
+  "Name": "export excel",
+  "Type": "Screen",
+  "Id": "ZyQPPe0Gz0uxnWJ92NTD6g",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/ZyQPPe0Gz0uxnWJ92NTD6g",
+  "ParentRef": "IXKExI60ykiHsIQ94JnUWA/r4FG7Oek6k-mF4ld0ycEnA",
+  "Created": "2024-11-15T15:17:01.0955154Z",
+  "Updated": "2024-11-15T15:17:01.0955154Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

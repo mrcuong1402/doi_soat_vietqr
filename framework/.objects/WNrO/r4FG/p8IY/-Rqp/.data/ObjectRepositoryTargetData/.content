@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yjVXllBSikWLm1nXG3hCXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="46aee43a-f341-4709-bb98-297f404a9f16" CvElementArea="1292, 429, 104, 37" CvTextArea="1314, 441, 58, 12" CvTextArgument="Xuãt Excel" CvType="Button" DesignTimeRectangle="1292, 429, 104, 37" DesignTimeScaleFactor="1" ElementType="Button" Guid="b4c553ab-b271-4b27-9d95-59d782bffb06" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VIETQR.VN - Phần mềm tạo mã QR và Đối soát giao dịch thanh toán qua mã VietQR' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="46aee43a-f341-4709-bb98-297f404a9f16" CvElementArea="1176, 428, 104, 38" CvTextArea="1211, 441, 53, 12" CvTextArgument="Tim kiém" CvType="Button" DesignTimeRectangle="1176, 428, 104, 38" ElementType="Button" Guid="0486d87d-64b6-4aa1-86f8-b3c02365d4f4" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f0a811b2505ecc8b54a007590b7cda98.png" xmlns="">0zJp9hdhnGUWed6BrozbM8Q</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

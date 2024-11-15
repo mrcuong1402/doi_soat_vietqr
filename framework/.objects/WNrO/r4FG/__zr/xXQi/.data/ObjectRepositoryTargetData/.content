@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YxTUQZLa70qzTqSajKHPKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://vietqr.vn/transactions/list" CVScreenId="ede0efff-8ca9-430c-8092-9ad6d4d109cd" CvElementArea="1183, 315, 20, 20" CvType="CloseButton" DesignTimeRectangle="1183, 315, 19, 19" DesignTimeScaleFactor="1" ElementType="Button" Guid="0a4994ce-21ef-4f1a-a3c7-b63c68fbcddf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VIETQR.VN - Phần mềm tạo mã QR và Đối soát giao dịch thanh toán qua mã VietQR' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="afc9ada70c2631eb2f5964992cad13d8.png" xmlns="">071aRBSoLzEyqCMviKh7ReA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

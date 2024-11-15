@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Icon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "j4jDlrmUz0uvAQYCdNSqQw",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/j4jDlrmUz0uvAQYCdNSqQw",
+  "ParentRef": "IXKExI60ykiHsIQ94JnUWA/p8IY1qRBu0ivkiKPXKlKkA",
+  "Created": "2024-11-15T15:17:00.9357469Z",
+  "Updated": "2024-11-15T15:17:00.9357469Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

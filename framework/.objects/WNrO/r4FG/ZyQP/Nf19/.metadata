@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Thài gian",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Nf19Z7RZkEiEby3lT-9JfQ",
+  "Reference": "IXKExI60ykiHsIQ94JnUWA/Nf19Z7RZkEiEby3lT-9JfQ",
+  "ParentRef": "IXKExI60ykiHsIQ94JnUWA/ZyQPPe0Gz0uxnWJ92NTD6g",
+  "Created": "2024-11-15T15:17:01.1316294Z",
+  "Updated": "2024-11-15T15:21:31.8396361Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
