@@ -1,8 +1,8 @@
-<!-- Spanish version -->
-Una excepción de regla de negocio fue encontrada durante la ejecución del proceso <b>{0}</b>
-<br> La excepción encontrada fue: <b>{1}</b>
+﻿Kính gửi Quý khách,
+<p>
+Chúng tôi xin gửi đến Quý khách file chi tiết giao dịch VietQR ngày {0}.
+<br>Quý khách vui lòng xem file đính kèm để biết thêm chi tiết.
+</p>
 
-<!-- English version 
-A business rule exception was encountered during the execution of process <b>{0}</b>
-<br> The exception was: <b>{1}</b>
--->
+<b>Trân trọng,</b>
+<br><b>VietQr Bot</b>

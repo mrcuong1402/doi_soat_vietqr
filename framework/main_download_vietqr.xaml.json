@@ -1,0 +1,21 @@
+{
+  "DisplayName": "main_download_vietqr",
+  "Tooltip": "*** DESCRIPTION ***\n-  Description of the function of this workflow. Add specific details and business logic if it exists.\n\n*** META ***\nCreated on:    202X-0X-XX  ; sisua.developer\nModified on:  202X-0X-XX ; sisua.developer",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "_strEmailTo",
+      "DisplayName": "_strEmailTo",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

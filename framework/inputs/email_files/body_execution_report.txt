@@ -1,16 +1,11 @@
-<!-- Spanish version -->
-El proceso <b>{0}</b> ha terminado correctamente.
-<br> El resumen de la ejecución es:
+﻿Kính gửi Quý khách,
+<br>
+<br> Chúng tôi xin gửi đến Quý khách file chi tiết giao dịch VietQR ngày <b>{0}</b>.
+<br> Báo cáo thực thi như sau:
 <br>
 <br> {1}
-<br> 
-<br> Favor de revisar archivo(s) adjunto(s) para mayor información. 
-
-<!-- English version
-Process <b>{0}</b> has ended successfully.
-<br> The execution report is:
 <br>
-<br> {1}
-<br> 
-<br> Please see attached file(s) for more details.
- -->
+<br> Quý khách vui lòng xem file đính kèm để biết thêm chi tiết.
+<br>
+<b>Trân trọng,</b>
+<br><b>VietQr Bot</b>

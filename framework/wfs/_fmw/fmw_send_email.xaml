@@ -136,7 +136,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;- Send email using SMTP or office365 activity&#xA;- _strRecipientsColumn default options:  system_exception, business_exception, execution_report. You can add more email types columns in the _recipients.xlsx file&#xA;- Email server type options: smtp or office365&#xA;- _intMaxTimeToSendEmail: in seconds&#xA;&#xA;*** META ***&#xA;Created on:    2021-06-24 ; vicente.diaz&#xA;Modified on:  2022-11-14 ; vicente.diaz&#xA;Modified on:  2023-02-13 ; vicente.diaz&#xA;Modified on:  2023-10-26 ; vicente.diaz&#xA;Modified on:  2023-11-09 ; vicente.diaz&#xA;Modified on:  2023-11-09 ; vicente.diaz ; added exception attachments zip&#xA;Modified on:  2023-12-26 ; vicente.diaz ; added exception attachments max size" DisplayName="fmw_send_email" sap:VirtualizedContainerService.HintSize="541,1998" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="*** DESCRIPTION ***&#xA;- Send email using SMTP or office365 activity&#xA;- _strRecipientsColumn default options:  system_exception, business_exception, execution_report. You can add more email types columns in the _recipients.xlsx file&#xA;- Email server type options: smtp or office365&#xA;- _intMaxTimeToSendEmail: in seconds&#xA;&#xA;*** META ***&#xA;Created on:    2021-06-24 ; vicente.diaz&#xA;Modified on:  2022-11-14 ; vicente.diaz&#xA;Modified on:  2023-02-13 ; vicente.diaz&#xA;Modified on:  2023-10-26 ; vicente.diaz&#xA;Modified on:  2023-11-09 ; vicente.diaz&#xA;Modified on:  2023-11-09 ; vicente.diaz ; added exception attachments zip&#xA;Modified on:  2023-12-26 ; vicente.diaz ; added exception attachments max size" DisplayName="fmw_send_email" sap:VirtualizedContainerService.HintSize="1189,5626" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="sstrEmailPassword" />
       <Variable x:TypeArguments="x:String" Name="strEmailUser" />
@@ -168,7 +168,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_test_args" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="If_10">
+    <If Condition="[_dicConfig is Nothing]" DisplayName="if_test_wf_assign_test_args" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="If_10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -277,8 +277,8 @@
         </Sequence>
       </If.Then>
     </If>
-    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="479,25" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
-    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:GetCurrentJobInfo DisplayName="get_current_job_info" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[jobInfo]" />
+    <ui:LogMessage DisplayName="log_starting_wf" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[String.Format(&quot;--- Starting: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -286,7 +286,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:MultipleAssign DisplayName="assign_wf_parameters" sap:VirtualizedContainerService.HintSize="479,364" sap2010:WorkflowViewState.IdRef="MultipleAssign_26">
+    <ui:MultipleAssign DisplayName="assign_wf_parameters" sap:VirtualizedContainerService.HintSize="1189,396" sap2010:WorkflowViewState.IdRef="MultipleAssign_26">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_74">
@@ -364,7 +364,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:MultipleAssign DisplayName="if_np_execution_add_test_to_subject" sap:VirtualizedContainerService.HintSize="479,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
+    <ui:MultipleAssign DisplayName="if_np_execution_add_test_to_subject" sap:VirtualizedContainerService.HintSize="1189,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
@@ -378,7 +378,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:LogMessage DisplayName="log_subject" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Subject: &quot; + _strSubject]">
+    <ui:LogMessage DisplayName="log_subject" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Subject: &quot; + _strSubject]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -386,14 +386,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="get_recipients" sap:VirtualizedContainerService.HintSize="479,81" sap2010:WorkflowViewState.IdRef="Sequence_36">
+    <Sequence DisplayName="get_recipients" sap:VirtualizedContainerService.HintSize="1189,2380" sap2010:WorkflowViewState.IdRef="Sequence_36">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="initialize_recipients_arrays" sap:VirtualizedContainerService.HintSize="555,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+      <ui:MultipleAssign DisplayName="initialize_recipients_arrays" sap:VirtualizedContainerService.HintSize="547,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -423,7 +423,7 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <If Condition="[not String.IsNullOrEmpty(strRecipientsFile)]" DisplayName="if_recipients_file_exist" sap:VirtualizedContainerService.HintSize="555,1623" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[not String.IsNullOrEmpty(strRecipientsFile)]" DisplayName="if_recipients_file_exist" sap:VirtualizedContainerService.HintSize="547,1434" sap2010:WorkflowViewState.IdRef="If_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -431,7 +431,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="get_recipients_from_file" sap:VirtualizedContainerService.HintSize="521,1441" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="get_recipients_from_file" sap:VirtualizedContainerService.HintSize="513,1175" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="arrToRecipientsFile" />
               <Variable x:TypeArguments="s:String[]" Name="arrCcRecipientsFile" />
@@ -444,7 +444,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadRange AddHeaders="True" DataTable="[dtaRecipients]" DisplayName="read_recipients" sap:VirtualizedContainerService.HintSize="479,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="base" WorkbookPath="[strRecipientsFile]">
+            <ui:ReadRange AddHeaders="True" DataTable="[dtaRecipients]" DisplayName="read_recipients" sap:VirtualizedContainerService.HintSize="479,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="base" WorkbookPath="[strRecipientsFile]">
               <ui:ReadRange.Range>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
@@ -457,13 +457,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ReadRange>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtaRecipients]" DisplayName="fe_email_format_env_col" sap:VirtualizedContainerService.HintSize="479,266" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtaRecipients]" DisplayName="fe_email_format_env_col" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="fe_email_format_env_col" sap:VirtualizedContainerService.HintSize="521,235" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <Sequence DisplayName="fe_email_format_env_col" sap:VirtualizedContainerService.HintSize="513,230" sap2010:WorkflowViewState.IdRef="Sequence_33">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strEmail" />
                       <Variable x:TypeArguments="x:Int32" Name="intEnvLevel" />
@@ -472,11 +472,11 @@
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:MultipleAssign DisplayName="get_email_info" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                    <ui:MultipleAssign DisplayName="get_email_info" sap:VirtualizedContainerService.HintSize="479,170" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_47">
@@ -501,17 +501,23 @@
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
-            </ui:ForEachRow>
-            <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Column = environment&#xA;Order     = Ascending &#xA;" ColumnName="environment" DataTable="[dtaRecipients]" DisplayName="sort_recipients_by_env" sap:VirtualizedContainerService.HintSize="479,109" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[dtaRecipients]" SortOrder="Ascending">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Column = environment&#xA;Order     = Ascending &#xA;" ColumnName="environment" DataTable="[dtaRecipients]" DisplayName="sort_recipients_by_env" sap:VirtualizedContainerService.HintSize="479,169" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[dtaRecipients]" SortOrder="Ascending">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SortDataTable>
-            <ui:MultipleAssign DisplayName="filter_active_recipients_by_email_type" sap:VirtualizedContainerService.HintSize="479,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
+            <ui:MultipleAssign DisplayName="filter_active_recipients_by_email_type" sap:VirtualizedContainerService.HintSize="479,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_90">
@@ -525,7 +531,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:MultipleAssign DisplayName="get_recipients_according_env" sap:VirtualizedContainerService.HintSize="479,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_22">
+            <ui:MultipleAssign DisplayName="get_recipients_according_env" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_22">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_54">
@@ -555,7 +561,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:MultipleAssign DisplayName="get_recipients_by_type" sap:VirtualizedContainerService.HintSize="479,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_24">
+            <ui:MultipleAssign DisplayName="get_recipients_by_type" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_24">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_67">
@@ -585,7 +591,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:MultipleAssign DisplayName="append_file_recipients_and_remove_empty_values" sap:VirtualizedContainerService.HintSize="479,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_25">
+            <ui:MultipleAssign DisplayName="append_file_recipients_and_remove_empty_values" sap:VirtualizedContainerService.HintSize="479,201" sap2010:WorkflowViewState.IdRef="MultipleAssign_25">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_70">
@@ -618,10 +624,16 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_50" />
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_50">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
         </If.Else>
       </If>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="if _boolSendToClients = False -&gt; Only emails with @sisuadigital.com" DisplayName="filter_client_emails" sap:VirtualizedContainerService.HintSize="555,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_28">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="if _boolSendToClients = False -&gt; Only emails with @sisuadigital.com" DisplayName="filter_client_emails" sap:VirtualizedContainerService.HintSize="547,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_28">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_85">
@@ -656,7 +668,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:MultipleAssign DisplayName="assign_recipients_strings" sap:VirtualizedContainerService.HintSize="555,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+      <ui:MultipleAssign DisplayName="assign_recipients_strings" sap:VirtualizedContainerService.HintSize="547,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
@@ -694,7 +706,7 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <ui:LogMessage DisplayName="log_to_recipients" sap:VirtualizedContainerService.HintSize="555,52" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;To: &quot; + strTo]">
+      <ui:LogMessage DisplayName="log_to_recipients" sap:VirtualizedContainerService.HintSize="547,57" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;To: &quot; + strTo]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -702,7 +714,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:LogMessage DisplayName="log_cc_recipients" sap:VirtualizedContainerService.HintSize="555,52" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Cc: &quot; + strCc]">
+      <ui:LogMessage DisplayName="log_cc_recipients" sap:VirtualizedContainerService.HintSize="547,57" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Cc: &quot; + strCc]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -710,7 +722,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:LogMessage DisplayName="log_bcc_recipients" sap:VirtualizedContainerService.HintSize="555,52" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Bbc: &quot; + strBcc]">
+      <ui:LogMessage DisplayName="log_bcc_recipients" sap:VirtualizedContainerService.HintSize="547,48" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Bbc: &quot; + strBcc]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -719,14 +731,14 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
     </Sequence>
-    <Sequence DisplayName="get_credentials" sap:VirtualizedContainerService.HintSize="479,81" sap2010:WorkflowViewState.IdRef="Sequence_47">
+    <Sequence DisplayName="get_credentials" sap:VirtualizedContainerService.HintSize="1189,800" sap2010:WorkflowViewState.IdRef="Sequence_47">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="log_email_orch_assets" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;Getting email asset: &quot; + strEmailCreds]">
+      <ui:LogMessage DisplayName="log_email_orch_assets" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;Getting email asset: &quot; + strEmailCreds]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -734,7 +746,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[strEmailCreds]" CacheStrategy="None" DisplayName="get_orch_credential_email" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[sstrEmailPassword]" Username="[strEmailUser]">
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[strEmailCreds]" CacheStrategy="None" DisplayName="get_orch_credential_email" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[sstrEmailPassword]" Username="[strEmailUser]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -742,7 +754,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:GetRobotCredential>
-      <ui:LogMessage DisplayName="log_sender" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Sending from: &quot; + strEmailUser]">
+      <ui:LogMessage DisplayName="log_sender" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Sending from: &quot; + strEmailUser]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -750,7 +762,27 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <If Condition="[strEmailUser = &quot;&quot;]" DisplayName="if_empty_email_user_throw_sys_exc" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="If_14">
+      <If Condition="[strEmailUser = &quot;&quot;]" DisplayName="if_empty_email_user_throw_sys_exc" sap:VirtualizedContainerService.HintSize="450,371" sap2010:WorkflowViewState.IdRef="If_14">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Throw DisplayName="throw_sys_exc_email_user_empty" Exception="[New System.Exception(&quot;Email user is empty! Check the email credentials&quot;)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_4" />
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_54">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+      <If Condition="[strEmailServerType.Trim.ToLower = &quot;office365&quot;]" DisplayName="if_office365_email_get_orch_assets" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="If_13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -758,18 +790,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Throw DisplayName="throw_sys_exc_email_user_empty" Exception="[New System.Exception(&quot;Email user is empty! Check the email credentials&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_4" />
-        </If.Then>
-      </If>
-      <If Condition="[strEmailServerType.Trim.ToLower = &quot;office365&quot;]" DisplayName="if_office365_email_get_orch_assets" sap:VirtualizedContainerService.HintSize="410,688" sap2010:WorkflowViewState.IdRef="If_13">
-        <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="376,506" sap2010:WorkflowViewState.IdRef="Sequence_51">
+          <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,458" sap2010:WorkflowViewState.IdRef="Sequence_51">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="log_getting_orch_assets" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Getting O365 assets: &quot; + strO365AppId + &quot; &amp; &quot; + strO365TenantId]">
+            <ui:LogMessage DisplayName="log_getting_orch_assets" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Getting O365 assets: &quot; + strO365AppId + &quot; &amp; &quot; + strO365TenantId]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -777,12 +804,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[strO365AppId]" CacheStrategy="None" DisplayName="get_asset_O365_app_id" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_7">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[strO365AppId]" CacheStrategy="None" DisplayName="get_asset_O365_app_id" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="GetRobotAsset_7">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">[strO365AppId]</OutArgument>
               </ui:GetRobotAsset.Value>
             </ui:GetRobotAsset>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[strO365TenantId]" CacheStrategy="None" DisplayName="get_asset_O365_tenant_id" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_8">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[strO365TenantId]" CacheStrategy="None" DisplayName="get_asset_O365_tenant_id" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="GetRobotAsset_8">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">[strO365TenantId]</OutArgument>
               </ui:GetRobotAsset.Value>
@@ -790,18 +817,24 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_52" />
+          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_52">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="build_email_body" sap:VirtualizedContainerService.HintSize="479,81" sap2010:WorkflowViewState.IdRef="Sequence_41">
+    <Sequence DisplayName="build_email_body" sap:VirtualizedContainerService.HintSize="1189,600" sap2010:WorkflowViewState.IdRef="Sequence_41">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadTextFile File="{x:Null}" Content="[strEmailBody]" DisplayName="read_template_wrapper" Encoding="utf-8" FileName="[_strEmailWrapperFile]" sap:VirtualizedContainerService.HintSize="479,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+      <ui:ReadTextFile File="{x:Null}" Content="[strEmailBody]" DisplayName="read_template_wrapper" Encoding="utf-8" FileName="[_strEmailWrapperFile]" sap:VirtualizedContainerService.HintSize="479,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -809,7 +842,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadTextFile>
-      <ui:ReadTextFile File="{x:Null}" Content="[strBodyMsg]" DisplayName="read_body_file" Encoding="utf-8" FileName="[_strBodyMsgFile]" sap:VirtualizedContainerService.HintSize="479,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+      <ui:ReadTextFile File="{x:Null}" Content="[strBodyMsg]" DisplayName="read_body_file" Encoding="utf-8" FileName="[_strBodyMsgFile]" sap:VirtualizedContainerService.HintSize="479,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -817,7 +850,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadTextFile>
-      <ui:MultipleAssign DisplayName="join_email_body_message" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:MultipleAssign DisplayName="join_email_body_message" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -839,7 +872,7 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <Assign DisplayName="assign_body_fields_to_wrapper" sap:VirtualizedContainerService.HintSize="479,82" sap2010:WorkflowViewState.IdRef="Assign_34">
+      <Assign DisplayName="assign_body_fields_to_wrapper" sap:VirtualizedContainerService.HintSize="479,105" sap2010:WorkflowViewState.IdRef="Assign_34">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[strEmailBody]</OutArgument>
         </Assign.To>
@@ -848,7 +881,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="format_attachments" sap:VirtualizedContainerService.HintSize="479,81" sap2010:WorkflowViewState.IdRef="Sequence_42">
+    <Sequence DisplayName="format_attachments" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="Sequence_42">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strExceptionsAttachment" />
         <Variable x:TypeArguments="s:String[]" Name="arrExceptionFiles" />
@@ -860,7 +893,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:FolderExistsX DisplayName="folder_exception_exists" Exists="[boolExcFolderExists]" sap:VirtualizedContainerService.HintSize="555,52" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[strExceptionsFolder]">
+      <ui:FolderExistsX DisplayName="folder_exception_exists" Exists="[boolExcFolderExists]" sap:VirtualizedContainerService.HintSize="555,57" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[strExceptionsFolder]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -868,7 +901,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:FolderExistsX>
-      <ui:MultipleAssign DisplayName="remove_empty_attachments" sap:VirtualizedContainerService.HintSize="555,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_27">
+      <ui:MultipleAssign DisplayName="remove_empty_attachments" sap:VirtualizedContainerService.HintSize="555,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_27">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_83">
@@ -898,7 +931,7 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <If Condition="[arrExceptionFiles.Count &gt; 0]" DisplayName="if_exception_files_exists" sap:VirtualizedContainerService.HintSize="555,982" sap2010:WorkflowViewState.IdRef="If_15">
+      <If Condition="[arrExceptionFiles.Count &gt; 0]" DisplayName="if_exception_files_exists" sap:VirtualizedContainerService.HintSize="555,981" sap2010:WorkflowViewState.IdRef="If_15">
         <If.Then>
           <Sequence DisplayName="zip_and_attach_exception_folder" sap:VirtualizedContainerService.HintSize="521,800" sap2010:WorkflowViewState.IdRef="Sequence_43">
             <Sequence.Variables>
@@ -959,7 +992,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <uascw:CompressFiles CompressedFileInfo="{x:Null}" CompressedResource="{x:Null}" Password="{x:Null}" ResourcesToArchive="{x:Null}" SecurePassword="{x:Null}" CodePage="Default" CompressedFileName="[strExceptionsAttachment]" CompressionLevel="Normal" DisplayName="compress_zip_exception_folders" EncryptionAlgorithm="Classic" sap:VirtualizedContainerService.HintSize="479,215" sap2010:WorkflowViewState.IdRef="CompressFiles_1" OverrideExistingFile="True">
+            <uascw:CompressFiles CompressedFileInfo="{x:Null}" CompressedResource="{x:Null}" Password="{x:Null}" ResourcesToArchive="{x:Null}" SecurePassword="{x:Null}" AllowDuplicateContentNames="False" CodePage="Default" CompressedFileName="[strExceptionsAttachment]" CompressionLevel="Normal" DisplayName="compress_zip_exception_folders" EncryptionAlgorithm="Classic" sap:VirtualizedContainerService.HintSize="479,215" sap2010:WorkflowViewState.IdRef="CompressFiles_1" OverrideExistingFile="True">
               <uascw:CompressFiles.ContentToArchive>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                   <InArgument x:TypeArguments="x:String">[String.Join("|", arrFilesToZip)]</InArgument>
@@ -983,11 +1016,11 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_53" />
+          <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_53" />
         </If.Else>
       </If>
     </Sequence>
-    <ui:LogMessage DisplayName="log_num_attachments" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Attachments files: &quot; + _arrAttachmentsFiles.Length.ToString]">
+    <ui:LogMessage DisplayName="log_num_attachments" sap:VirtualizedContainerService.HintSize="1189,57" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Attachments files: &quot; + _arrAttachmentsFiles.Length.ToString]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -995,17 +1028,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="send_email" sap:VirtualizedContainerService.HintSize="479,81" sap2010:WorkflowViewState.IdRef="Sequence_49">
+    <Sequence DisplayName="send_email" sap:VirtualizedContainerService.HintSize="1189,817" sap2010:WorkflowViewState.IdRef="Sequence_49">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="boolSentEmail" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="assign_sent_email_init" sap:VirtualizedContainerService.HintSize="1074,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
+      <ui:MultipleAssign DisplayName="assign_sent_email_init" sap:VirtualizedContainerService.HintSize="1155,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_43">
@@ -1019,15 +1052,15 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <Parallel DisplayName="parallel_send_email_and_timeout_timer" sap:VirtualizedContainerService.HintSize="1074,128" sap2010:WorkflowViewState.IdRef="Parallel_1">
-        <Sequence DisplayName="send_email" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <Parallel DisplayName="parallel_send_email_and_timeout_timer" sap:VirtualizedContainerService.HintSize="1155,529" sap2010:WorkflowViewState.IdRef="Parallel_1">
+        <Sequence DisplayName="send_email" sap:VirtualizedContainerService.HintSize="571,450" sap2010:WorkflowViewState.IdRef="Sequence_29">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="log_send_email" sap:VirtualizedContainerService.HintSize="497,52" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[String.Format(&quot;Sending email ({0}) ...&quot;, strEmailServerType)]">
+          <ui:LogMessage DisplayName="log_send_email" sap:VirtualizedContainerService.HintSize="497,57" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[String.Format(&quot;Sending email ({0}) ...&quot;, strEmailServerType)]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1035,7 +1068,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Switch x:TypeArguments="x:String" DisplayName="sw_email_server_type" Expression="[strEmailServerType]" sap:VirtualizedContainerService.HintSize="497,162" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+          <Switch x:TypeArguments="x:String" DisplayName="sw_email_server_type" Expression="[strEmailServerType]" sap:VirtualizedContainerService.HintSize="497,194" sap2010:WorkflowViewState.IdRef="Switch`1_3">
             <Switch.Default>
               <Throw DisplayName="throw_sys_exc_invalid_email_server" Exception="[New System.Exception(String.Format(&quot;Invalid email server type ({0}). It must be office365 or smtp&quot;, strEmailServerType))]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_3" />
             </Switch.Default>
@@ -1055,7 +1088,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SendMail>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="office365" DisplayName="inv_office365_send_email.xaml" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="wfs\_fmw\office365_send_email.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="office365" DisplayName="inv_office365_send_email.xaml" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="wfs\_fmw\office365_send_email.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="_strEmailAddress">[strEmailUser]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="_strTenantId">[strO365TenantId]</InArgument>
@@ -1069,7 +1102,7 @@
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Switch>
-          <ui:MultipleAssign DisplayName="assign_sent_email_true" sap:VirtualizedContainerService.HintSize="497,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
+          <ui:MultipleAssign DisplayName="assign_sent_email_true" sap:VirtualizedContainerService.HintSize="497,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_44">
@@ -1090,7 +1123,7 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
         </Sequence>
-        <Sequence DisplayName="execute_activity_timer" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_28">
+        <Sequence DisplayName="execute_activity_timer" sap:VirtualizedContainerService.HintSize="490,450" sap2010:WorkflowViewState.IdRef="Sequence_28">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1127,7 +1160,7 @@
           </If>
         </Sequence>
       </Parallel>
-      <ui:LogMessage DisplayName="log_sent_email" sap:VirtualizedContainerService.HintSize="1074,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Email sent successfully&quot;]">
+      <ui:LogMessage DisplayName="log_sent_email" sap:VirtualizedContainerService.HintSize="1155,48" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Email sent successfully&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1136,7 +1169,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
     </Sequence>
-    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
+    <ui:LogMessage DisplayName="log_wf_finished" sap:VirtualizedContainerService.HintSize="1189,48" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[String.Format(&quot;--- Finished: {0} ---&quot;, jobInfo.WorkflowName)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
